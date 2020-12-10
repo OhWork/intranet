@@ -51,7 +51,16 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
+            'last' => ['required', 'string', 'max:255'],
+            'nameeng' => ['required', 'string', 'max:255'],
+            'lasteng' => ['required', 'string', 'max:255'],
+            'tel' => ['required', 'string', 'max:255'],
+            'status' => ['required', 'string', 'max:255'],
+            'fk_zoos_id' => ['required', 'string', 'max:255'],
+            'fk_subzoos_id' => ['required', 'string', 'max:255'],
+            'fk_systemallow_id' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'user' => ['required', 'string', 'max:255'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
     }
@@ -66,7 +75,16 @@ class RegisterController extends Controller
     {
         return User::create([
             'name' => $data['name'],
+            'last' => $data['last'],
+            'nameeng' => $data['nameeng'],
+            'lasteng' => $data['lasteng'],
+            'tel' => $data['tel'],
+            'fk_zoos_id' => $data['fk_zoos_id'],
+            'fk_subzoos_id' => $data['fk_subzoos_id'],
+            'fk_systemallow_id' => $data['fk_systemallow_id'],
+            'status' => $data['status'],
             'email' => $data['email'],
+            'user' => $data['user'],
             'password' => Hash::make($data['password']),
         ]);
     }
