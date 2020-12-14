@@ -82,17 +82,21 @@
                     <div class="col-md-4">
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <a class="#">ระบบจัดการผู้ใช้</a>
+                                <a class="/zoos">จัดการสำนัก/สวนสัตว์</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a class="#">จัดการฝ่าย/งาน</a>
                             </li>
                         </ul>
                     </div>
+                    <div class="col-md-8">
+                        @yield('content')
+                    </div>
                 </div>
             </div>
-                @else
+            @else
                 @yield('content')
             @endauth
-
-
         </main>
     </div>
 </body>
