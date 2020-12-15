@@ -47,7 +47,7 @@
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="row justify-content-center">
-                        <div class="col-md-8">
+                        <div class="col-12">
                             <div class="card">
                                 <div class="card-header">{{ __('Login') }}</div>
 
