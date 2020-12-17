@@ -82,10 +82,10 @@
                     <div class="col-md-4">
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <a class="/zoos">จัดการสำนัก/สวนสัตว์</a>
+                                <a href="{{route('zoos.index')}}">จัดการสำนัก/สวนสัตว์</a>
                             </li>
                             <li class="list-group-item">
-                                <a class="#">จัดการฝ่าย/งาน</a>
+                                <a href="#">จัดการฝ่าย/งาน</a>
                             </li>
                         </ul>
                     </div>

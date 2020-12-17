@@ -1,10 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Zoo;
 use Illuminate\Http\Request;
 
-class ZoosController extends Controller
+class ZooController extends Controller
 {
     /**
      * Display a listing of the resource.

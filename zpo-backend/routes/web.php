@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,8 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-    Route::get('/zoos', [App\Http\Controllers\ZoosController::class, 'index'])->name('zoos.index');
+Route::get('/zoos', [App\Http\Controllers\ZooController::class, 'index'])->name('zoos.index');
     //Route::get('/categories/create', [App\Http\Controllers\CategoryController::class, 'create'])->name('categories.create');
     //Route::get('/categories/{category}/edit', [App\Http\Controllers\CategoryController::class, 'edit'])->name('categories.edit');
     //Route::put('/categories/{category}', [App\Http\Controllers\CategoryController::class, 'update'])->name('categories.update');
