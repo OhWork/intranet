@@ -10,7 +10,23 @@
             @csrf
             <div class="form-group">
                 <label for="">ชื่อ</label>
-                <input type="text" class="form-control" name="" value="">
+                <input type="text" class="form-control" name="zoos_name" value="">
+            </div>
+            <div class="form-group">
+                <label for="">ชื่อ</label>
+                <input type="text" class="form-control" name="zoos_type" value="">
+            </div>
+            <div class="form-group">
+                <label for="">ลำดับ</label>
+                <input type="text" class="form-control" name="zoos_no" value="">
+            </div>
+            <div class="form-group">
+                <label for="">สถานะ</label>
+                <input type="text" class="form-control" name="zoos_no" value="">
+            </div>
+            <div class="form-group">
+                <label for="">รูปภาพ</label>
+                <input type="text" class="form-control" name="zoos_no" value="">
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-success" value="เพิ่ม">
