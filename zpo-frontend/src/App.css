@@ -1,38 +1,78 @@
-.App {
+body {
+  background-color: #eee;
+  color: #3c4858;
+  font-size: 14px;
+}
+/* Menumain */
+.mm1 {
+  width: 260px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border: none;
+  z-index: 1032;
+  position: fixed;
+  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42),
+  0 4px 25px 0px rgba(0, 0, 0, 0.12),0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  transition-duration: .2s,.2s,.35s;
+  transition-property: top,bottom, width;
+  transition-timing-function: linear,linear,ease;
+}
+.mm1:active {
+  width: 70px;
+}
+.mm2 {
+  margin: 0;
+  display: flex;
+  z-index: 4;
+  position: relative;
+  margin-top: 15px;
+}
+.mm2 a,.mm2:hover a{ 
+  color:#ffffff;
+}
+.mm2::after {
+  right: 15px;
+  width: calc(100% - 30 px);
+  bottom: 0;
+  height: 1px;
+  position: absolute;
+  background-color: hsla(0, 0%, 100%, .3);
+}
+.mmr1 {
+  color: inherit;
+  float: left;
+  opacity: 1;
+  display: inline-block;
+  text-align: center;
+  transition: all 300ms linear;
+  margin-left: 15px;
+  margin-right: 15px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mmr2 {
+  display: block;
+  opacity: 1;
+  padding: 5px 0px;
+  overflow: hidden;
+  font-size: 18px;
+  transform: translate3d(0px,0,0);
+  transition: all 300ms linear;
+  font-family: "Roboto","Helvetica","Arial","sans-serif";
+  font-weight: 400;
+  line-height: 30px;
+  white-space: nowrap;
+  text-transform: uppercase;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* warpper */
+.wp1 {
+  width: calc(100% - 260px);
+  position: relative;
+  left: 260px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wp1:active {
+  width: calc(100% - 60px);
+  left: 60px;
 }
